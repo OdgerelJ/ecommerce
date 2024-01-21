@@ -9,7 +9,7 @@ import Shipping from "./Shipping";
 import { loadStripe } from "@stripe/stripe-js";
 
 const stripePromise = loadStripe(
-  "pk_test_51LgU7yConHioZHhlAcZdfDAnV9643a7N1CMpxlKtzI1AUWLsRyrord79GYzZQ6m8RzVnVQaHsgbvN1qSpiDegoPi006QkO0Mlc"
+  "pk_live_51JJUPbJFfPvKPIbKPCpX98a945PTGOleULCSK0FmIeLSkFREMyxgFxCxkV5FL86rmIGIJKfqtKQx2BQZRl05BbGE00HOAddd9f"
 );
 
 const Checkout = () => {
@@ -47,7 +47,7 @@ const Checkout = () => {
       })),
     };
 
-    const response = await fetch("http://localhost:2000/api/orders", {
+    const response = await fetch("http://localhost:1337/api/orders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestBody),

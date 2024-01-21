@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
 export const shades = {
-  black: {
+  primary: {
     100: "#cccccc",
     200: "#999999",
     300: "#666666",
@@ -12,8 +12,7 @@ export const shades = {
     800: "#000000",
     900: "#000000",
   },
-
-  red: {
+  secondary: {
     100: "#f7ccd2",
     200: "#ef99a4",
     300: "#e66677",
@@ -24,8 +23,7 @@ export const shades = {
     800: "#56000b",
     900: "#2b0006",
   },
-
-  yellow: {
+  neutral: {
     100: "#f5f5f5",
     200: "#ecebeb",
     300: "#e2e1e1",

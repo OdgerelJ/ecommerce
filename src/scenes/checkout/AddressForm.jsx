@@ -18,6 +18,7 @@ const AddressForm = ({
 
   const formattedError = (field) =>
     Boolean(
+        // getIn is formik function to grab value from the form
       getIn(touched, formattedName(field)) &&
         getIn(errors, formattedName(field))
     );
