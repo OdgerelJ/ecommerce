@@ -31,6 +31,7 @@ const ItemDetails = () => {
       }
     );
     const itemJson = await item.json();
+    console.log(itemJson.data.attributes);
     setItem(itemJson.data);
   }
 
